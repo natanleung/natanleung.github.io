@@ -1,0 +1,135 @@
+/* Pseudo-class */
+
+:root {
+    /* Global variables */
+    --background-color: white;
+    --primary-color: black;
+    --secondary-color: lightgray;
+
+    height: 100%;
+    color: var(--primary-color);
+    font-family: "Roboto";
+    font-size: medium;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+/* Classes */
+
+.navigation {
+    width: 33%;
+    overflow: auto;
+    margin: auto;
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+}
+
+.navigation-left {
+    font-weight: bold;
+}
+
+.navigation-right {
+    display: flex;
+}
+
+.main {
+    width: 33%;
+    margin: auto;
+    padding-bottom: 10%;
+    line-height: 1.5;
+}
+
+.skills-list {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: small;
+}
+
+.skills-list-item {
+    padding: 1%;
+    border: thin solid var(--secondary-color);
+    border-radius: 10px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: min-content;
+    min-height: 5%;
+    margin: auto;
+    display: flex;
+    box-sizing: border-box;
+    padding: 0 1%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    border-top: thin solid var(--secondary-color);
+    font-size: small;
+}
+
+.footer-content-left {
+    width: 50%;
+}
+
+/* Elements */
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+p > a {
+    text-decoration: underline;
+}
+
+/* At-rules */
+
+@font-face {
+    /* Import Roboto-100 font */
+    font-display: block;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 100;
+    src: url("../assets/fonts/roboto-100.woff2") format("woff2");
+ }
+  
+@font-face {
+    /* Import Roboto-700 font */
+    font-display: block;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../assets/fonts/roboto-700.woff2") format("woff2");
+}
+
+@media screen and (max-width: 768px) {
+    /* Mobile devices */
+
+    :root {
+        font-size: small;
+    }
+
+    .navigation {
+        width: 66%;
+        margin-top: 20%;
+        font-size: medium;
+    }
+
+    .main {
+        width: 66%;
+    }
+
+    .footer {
+        font-size: x-small;
+    }
+}
