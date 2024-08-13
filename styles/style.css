@@ -7,6 +7,7 @@
     --secondary-color: lightgray;
 
     height: 100%;
+
     color: var(--primary-color);
     font-family: "Roboto";
     font-size: medium;
@@ -18,13 +19,18 @@ a:hover {
 
 /* Classes */
 
+.body {
+    padding: 15vh 0;
+}
+
 .navigation {
     width: 33%;
     overflow: auto;
     margin: auto;
-    margin-top: 10%;
+
     display: flex;
     justify-content: space-between;
+
     font-size: large;
 }
 
@@ -39,21 +45,24 @@ a:hover {
 .main {
     width: 33%;
     margin: auto;
-    padding-bottom: 10%;
+
     line-height: 1.5;
 }
 
 .skills-list {
     width: 90%;
     margin: auto;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+
     font-size: small;
 }
 
 .skills-list-item {
     padding: 1%;
+    
     border: thin solid var(--secondary-color);
     border-radius: 10px;
 }
@@ -66,11 +75,13 @@ a:hover {
     height: min-content;
     min-height: 5%;
     margin: auto;
+
     display: flex;
     box-sizing: border-box;
     padding: 0 1%;
     align-items: center;
     justify-content: space-between;
+
     background-color: var(--background-color);
     color: var(--secondary-color);
     border-top: thin solid var(--secondary-color);
@@ -119,9 +130,13 @@ p > a {
         font-size: small;
     }
 
+    .body {
+        padding: 20vh 0;
+    }
+
     .navigation {
         width: 66%;
-        margin-top: 20%;
+
         font-size: medium;
     }
 
